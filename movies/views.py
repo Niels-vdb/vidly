@@ -6,4 +6,4 @@ from .models import Movie
 # Create your views here.
 def index(request):
     movies = Movie.objects.all()
-    return render(request, "index.html", {"movies": movies})
+    return render(request, "movies/index.html", {"movies": movies})
